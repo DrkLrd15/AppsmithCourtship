@@ -63,16 +63,10 @@
                   "key": "schema.__root_schema__.children.name.borderRadius"
                 },
                 {
-                  "key": "schema.__root_schema__.children.date_of_birth.defaultValue"
-                },
-                {
                   "key": "schema.__root_schema__.children.date_of_birth.accentColor"
                 },
                 {
                   "key": "schema.__root_schema__.children.date_of_birth.borderRadius"
-                },
-                {
-                  "key": "schema.__root_schema__.children.employee_id.defaultValue"
                 },
                 {
                   "key": "schema.__root_schema__.children.employee_id.accentColor"
@@ -248,11 +242,11 @@
                     "date_of_birth": {
                       "children": {},
                       "dataType": "string",
-                      "defaultValue": "{{((sourceData, formData, fieldState) => (moment(sourceData.date_of_birth, \"DD/MM/YYYY\").format(\"YYYY-MM-DDTHH:mm:ss.sssZ\")))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                      "defaultValue": "",
                       "fieldType": "Text Input",
                       "sourceData": "20/02/1990",
                       "isCustomField": false,
-                      "accessor": "",
+                      "accessor": "lastname",
                       "identifier": "date_of_birth",
                       "position": 1,
                       "originalIdentifier": "date_of_birth",
@@ -270,11 +264,11 @@
                     "employee_id": {
                       "children": {},
                       "dataType": "number",
-                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.employee_id))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-                      "fieldType": "Number Input",
+                      "defaultValue": "",
+                      "fieldType": "Text Input",
                       "sourceData": 1001,
                       "isCustomField": false,
-                      "accessor": "employee_id",
+                      "accessor": "grade",
                       "identifier": "employee_id",
                       "position": 2,
                       "originalIdentifier": "employee_id",
@@ -295,7 +289,7 @@
                       "fieldType": "Text Input",
                       "sourceData": "",
                       "isCustomField": true,
-                      "accessor": "customField1",
+                      "accessor": "age",
                       "identifier": "customField1",
                       "position": 3,
                       "originalIdentifier": "customField1",
@@ -316,7 +310,7 @@
                       "fieldType": "Text Input",
                       "sourceData": "",
                       "isCustomField": true,
-                      "accessor": "customField2",
+                      "accessor": "highschoolid",
                       "identifier": "customField2",
                       "position": 4,
                       "originalIdentifier": "customField2",
@@ -337,7 +331,7 @@
                       "fieldType": "Text Input",
                       "sourceData": "",
                       "isCustomField": true,
-                      "accessor": "customField3",
+                      "accessor": "sat",
                       "identifier": "customField3",
                       "position": 5,
                       "originalIdentifier": "customField3",
@@ -358,7 +352,7 @@
                       "fieldType": "Text Input",
                       "sourceData": "",
                       "isCustomField": true,
-                      "accessor": "customField4",
+                      "accessor": "act",
                       "identifier": "customField4",
                       "position": 6,
                       "originalIdentifier": "customField4",
@@ -379,7 +373,7 @@
                       "fieldType": "Text Input",
                       "sourceData": "",
                       "isCustomField": true,
-                      "accessor": "customField5",
+                      "accessor": "gpa",
                       "identifier": "customField5",
                       "position": 7,
                       "originalIdentifier": "customField5",
@@ -400,7 +394,7 @@
                       "fieldType": "Text Input",
                       "sourceData": "",
                       "isCustomField": true,
-                      "accessor": "customField6",
+                      "accessor": "email",
                       "identifier": "customField6",
                       "position": 8,
                       "originalIdentifier": "customField6",

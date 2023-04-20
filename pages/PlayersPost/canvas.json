@@ -63,9 +63,6 @@
                   "key": "schema.__root_schema__.children.name.borderRadius"
                 },
                 {
-                  "key": "schema.__root_schema__.children.date_of_birth.defaultValue"
-                },
-                {
                   "key": "schema.__root_schema__.children.date_of_birth.accentColor"
                 },
                 {
@@ -248,7 +245,7 @@
                     "date_of_birth": {
                       "children": {},
                       "dataType": "string",
-                      "defaultValue": "{{((sourceData, formData, fieldState) => (moment(sourceData.date_of_birth, \"DD/MM/YYYY\").format(\"YYYY-MM-DDTHH:mm:ss.sssZ\")))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                      "defaultValue": "",
                       "fieldType": "Text Input",
                       "sourceData": "20/02/1990",
                       "isCustomField": false,
@@ -271,7 +268,7 @@
                       "children": {},
                       "dataType": "number",
                       "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.employee_id))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-                      "fieldType": "Number Input",
+                      "fieldType": "Multiselect",
                       "sourceData": 1001,
                       "isCustomField": false,
                       "accessor": "employee_id",
@@ -281,13 +278,14 @@
                       "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
                       "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
                       "boxShadow": "none",
-                      "iconAlign": "left",
                       "isDisabled": false,
+                      "isFilterable": false,
                       "isRequired": false,
-                      "isSpellCheck": false,
                       "isVisible": true,
+                      "label": "Grade",
                       "labelTextSize": "0.875rem",
-                      "label": "Grade"
+                      "serverSideFiltering": false,
+                      "options": "[\n  {\n    \"label\": \"Freshman\",\n    \"value\": \"FRESHMAN\"\n  },\n  {\n    \"label\": \"Sophomore\",\n    \"value\": \"SOPHOMORE\"\n  },\n  {\n    \"label\": \"Junior\",\n    \"value\": \"JUNIOR\"\n  },\n\t  {\n    \"label\": \"Senior\",\n    \"value\": \"SENIOR\"\n  }\n]"
                     },
                     "customField1": {
                       "children": {},

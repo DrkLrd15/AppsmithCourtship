@@ -62,16 +62,10 @@
                   "key": "schema.__root_schema__.children.name.borderRadius"
                 },
                 {
-                  "key": "schema.__root_schema__.children.date_of_birth.defaultValue"
-                },
-                {
                   "key": "schema.__root_schema__.children.date_of_birth.accentColor"
                 },
                 {
                   "key": "schema.__root_schema__.children.date_of_birth.borderRadius"
-                },
-                {
-                  "key": "schema.__root_schema__.children.employee_id.defaultValue"
                 },
                 {
                   "key": "schema.__root_schema__.children.employee_id.accentColor"
@@ -187,7 +181,7 @@
               },
               "disabledWhenInvalid": true,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "originalBottomRow": 86,
+              "originalBottomRow": 50,
               "useSourceData": false,
               "schema": {
                 "__root_schema__": {
@@ -217,35 +211,30 @@
                     "date_of_birth": {
                       "children": {},
                       "dataType": "string",
-                      "defaultValue": "{{((sourceData, formData, fieldState) => (moment(sourceData.date_of_birth, \"DD/MM/YYYY\").format(\"YYYY-MM-DDTHH:mm:ss.sssZ\")))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-                      "fieldType": "Datepicker",
+                      "defaultValue": "",
+                      "fieldType": "Text Input",
                       "sourceData": "20/02/1990",
                       "isCustomField": false,
-                      "accessor": "date_of_birth",
+                      "accessor": "",
                       "identifier": "date_of_birth",
                       "position": 1,
                       "originalIdentifier": "date_of_birth",
                       "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
                       "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
                       "boxShadow": "none",
-                      "closeOnSelection": false,
-                      "convertToISO": false,
-                      "dateFormat": "DD/MM/YYYY",
+                      "iconAlign": "left",
                       "isDisabled": false,
                       "isRequired": false,
+                      "isSpellCheck": false,
                       "isVisible": true,
-                      "label": "Wins",
-                      "maxDate": "2121-12-31T18:29:00.000Z",
-                      "minDate": "1920-12-31T18:30:00.000Z",
-                      "shortcuts": false,
-                      "timePrecision": "minute",
-                      "labelTextSize": "0.875rem"
+                      "labelTextSize": "0.875rem",
+                      "label": "Wins"
                     },
                     "employee_id": {
                       "children": {},
                       "dataType": "number",
-                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.employee_id))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-                      "fieldType": "Number Input",
+                      "defaultValue": "\n",
+                      "fieldType": "Text Input",
                       "sourceData": 1001,
                       "isCustomField": false,
                       "accessor": "employee_id",

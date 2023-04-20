@@ -218,7 +218,7 @@
               },
               "disabledWhenInvalid": true,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "originalBottomRow": 42,
+              "originalBottomRow": 86,
               "useSourceData": false,
               "schema": {
                 "__root_schema__": {
@@ -249,7 +249,7 @@
                       "children": {},
                       "dataType": "string",
                       "defaultValue": "{{((sourceData, formData, fieldState) => (moment(sourceData.date_of_birth, \"DD/MM/YYYY\").format(\"YYYY-MM-DDTHH:mm:ss.sssZ\")))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-                      "fieldType": "Datepicker",
+                      "fieldType": "Text Input",
                       "sourceData": "20/02/1990",
                       "isCustomField": false,
                       "accessor": "date_of_birth",
@@ -259,18 +259,13 @@
                       "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
                       "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
                       "boxShadow": "none",
-                      "closeOnSelection": false,
-                      "convertToISO": false,
-                      "dateFormat": "DD/MM/YYYY",
+                      "iconAlign": "left",
                       "isDisabled": false,
                       "isRequired": false,
+                      "isSpellCheck": false,
                       "isVisible": true,
-                      "label": "Last Name",
-                      "maxDate": "2121-12-31T18:29:00.000Z",
-                      "minDate": "1920-12-31T18:30:00.000Z",
-                      "shortcuts": false,
-                      "timePrecision": "minute",
-                      "labelTextSize": "0.875rem"
+                      "labelTextSize": "0.875rem",
+                      "label": "Last Name"
                     },
                     "employee_id": {
                       "children": {},
